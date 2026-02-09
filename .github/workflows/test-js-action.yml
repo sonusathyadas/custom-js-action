@@ -19,4 +19,5 @@ jobs:
           name: 'Sonu Sathyadas'
 
       - name: Verify Greeting Output
-        run: echo 'The action said: ${{ steps.greet-step.outputs.greeting }}'
+        run: |
+          echo "The action said: ${{ steps.greet-step.outputs.greeting }}"
